@@ -1,0 +1,139 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #6a0dad; /* Purple color */
+    color: #ffffff; /* White color */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Icons in the navbar */
+.left-icons {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    cursor: pointer;
+    fill: #ffffff; /* White color for icons */
+}
+/* Dropdown wrapper */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown content - Почетно скриено */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #6a0dad; /* Purple color */
+    color: #ffffff; /* White color */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    right: 0;
+}
+
+
+/* При ховерување врз dropdown, прикажи го dropdown менито */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Стилови за линковите во dropdown */
+.dropdown-content a {
+    color: #ffffff; /* White color */
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Hover ефект за линковите */
+.dropdown-content a:hover {
+    background-color: #4b0082; /* Darker purple color */
+}
+
+
+/* Дополнителни стилови за сликите и текстот */
+.image-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    white-space: nowrap;
+}
+
+
+/* On hover, change the background color of the links */
+.dropdown-content a:hover {
+    background-color: #555555;
+}
+
+/* Search bar styles */
+.search-box {
+    background-color: var(--soft-black);
+    border-radius: 110px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #555555;
+}
+
+.search-box i {
+    margin-right: 10px;
+}
+
+.search-input {
+    color: var(--text);
+    background-color: var(--soft-black);
+    border: none;
+    width: 100%;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+#search-input {
+    padding: 8px;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    background-color: #222222;
+    color: #ffffff;
+    outline: none;
+}
+
+#search-input::placeholder {
+    color: #aaaaaa;
+}
+
+#search-btn {
+    margin-left: 8px;
+    padding: 8px 12px;
+    border: none;
+    background-color: #555555;
+    color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: #666666;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+a img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
